@@ -19,7 +19,7 @@ class TodoUpdate(BaseModel):
 class TodoOut(BaseModel):
     id: int
     title: str
-    description: Optional[str]
+    description: Optional[str] = None
     status: TodoStatus
     user_id: int
     created_at: datetime
